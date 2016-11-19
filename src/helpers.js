@@ -9,8 +9,8 @@ function getCandidates(){
 };
 
 var helpers = {
-  getEmployer: function(companyName,companyWebsite){
-    return axios.get("http://localhost:8888/api/employers" + "?name=" + companyName + "&website=" + companyWebsite);
+  getEmployer: function(employerid){
+    return axios.get("http://localhost:8888/api/employers/" + employerid);
   },
   getAll: function(){
     return axios.all([getEmployers(), getCandidates()])

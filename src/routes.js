@@ -6,7 +6,7 @@ import { Router, Route, Link, hashHistory, IndexRoute  } from 'react-router'
 
 module.exports = (
   <Route path="/" component={ Main }>
-    <Route path="employers/:employerid" component={ EmployerProfile } />
     <IndexRoute component={ Admin } />
+    <Route path="employers/:employerid" component={ EmployerProfile } />
   </Route>
 )
