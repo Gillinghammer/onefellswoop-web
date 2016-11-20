@@ -3,8 +3,8 @@ import helpers from '../helpers';
 import { Router, Route, Link, hashHistory } from 'react-router'
 
 class Employers extends React.Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {  employers: [] }
   }
   componentDidMount(){

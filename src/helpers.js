@@ -9,6 +9,9 @@ function getCandidates(){
 };
 
 var helpers = {
+  updateEmployer: function(employer) {
+    return axios.put("http://localhost:8888/api/employers/" + employer._id, employer);
+  },
   getEmployer: function(employerid){
     return axios.get("http://localhost:8888/api/employers/" + employerid);
   },
